@@ -1,16 +1,18 @@
 👋 Welcome to my portfolio
-Hi! I'm Kamil Semczuk, and I build projects that combine data analysis, machine learning, LLMs, and modern backend technologies.
+Hi! I'm Kamil Semczuk, a Computer Science student passionate about building projects that combine data engineering, data analysis, machine learning, and AI-driven applications.
 
-In this portfolio, you'll find selected projects that showcase my technical skills and problem-solving approach.
+In this portfolio, you’ll find selected projects that demonstrate both my technical skills and my problem-solving approach, from raw data to deployed interactive solutions.
 
-🔧 Technologies I enjoy working with:
+🔧 Technologies I work with:
 
-- 🐍 Python (pandas, pycaret, streamlit, currently learning scikit-learn)
+🐍 Python (pandas, PyCaret, Streamlit, scikit-learn)
 
-- 🧠 AI/LLM (OpenAI, Langfuse, Instructor)
+🧠 AI & LLMs (OpenAI, Langfuse, Instructor)
 
-- 🌐 Web (Streamlit)
+⚡ Data Engineering (Advanced SQL, ETL pipelines in Python; planning to expand into PySpark, Apache Kafka, and Kubernetes)
 
-- ☁️ Cloud (DigitalOcean, boto3, S3)
+🌐 Web & Apps (Streamlit, deployment on DigitalOcean)
 
-- 📊 Visualization (matplotlib, seaborn, plotly)
+☁️ Cloud (boto3, S3)
+
+📊 Visualization (matplotlib, seaborn, plotly)
