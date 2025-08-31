@@ -9,7 +9,11 @@ In this portfolio, you’ll find selected projects that demonstrate both my tech
 
 🧠 AI & LLMs (OpenAI, Langfuse, Instructor)
 
-⚡ Data Engineering (Advanced SQL, ETL pipelines in Python; planning to expand into PySpark, Apache Kafka, and Kubernetes)
+🗄️ SQL
+Intermediate level – strong knowledge of queries, CTE, subqueries, window functions (RANK, ROW_NUMBER, PARTITION BY), transactions, CASE WHEN, and table creation.
+
+⚡ Data Engineering
+ETL pipelines in Python (pandas), file processing (CSV, Excel, JSON), deployment on DigitalOcean. Expanding into PySpark, Apache Kafka, and Kubernetes.
 
 🌐 Web & Apps (Streamlit, deployment on DigitalOcean; using storage and buckets for loading/dumping data and ML models)
 
