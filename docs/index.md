@@ -11,7 +11,7 @@ In this portfolio, you’ll find selected projects that demonstrate both my tech
 
 ⚡ Data Engineering (Advanced SQL, ETL pipelines in Python; planning to expand into PySpark, Apache Kafka, and Kubernetes)
 
-🌐 Web & Apps (Streamlit, deployment on DigitalOcean)
+🌐 Web & Apps (Streamlit, deployment on DigitalOcean; using storage and buckets for loading/dumping data and ML models)
 
 ☁️ Cloud (boto3, S3)
 
