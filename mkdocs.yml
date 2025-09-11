@@ -1,7 +1,7 @@
 site_name: My projects
 site_author: Kmail Semczuk
 site_description: >
-  Portfolio of my Data Science and AI projects!
+  DataCraft – Engineering, Science & AI, Analytics projects
 
 site_url: https://KamilSemczuk13/ds_portfolio_ENG
 repo_name: KamilSemczuk13/ds_portfolio
@@ -12,12 +12,20 @@ theme:
 
 nav:
   - 🏠 Start: index.md
-  - 📊 Analysis:    
-     - 🛳️ Titanic (survivival analysis): Analizy/Titanic/index.md
-     - 🌸 Iris (classyfication of Irises): Analizy/Iris/index.md
-  - 💻 Apps: 
-      - 🏃‍♂️ Halfmaraton: Aplikacje/Maraton/index.md
-      - ✈️ Flight4u – flight searching: Aplikacje/Loty/index.md
+  - ⚙️ Data Engeneering:
+    - 🛒 Shop Data Explorer: Data Engeneering/Shop/index.md
+  - 🤖 Data Science & AI:
+    - 🏃‍♂️ Halfmaraton: Data Science/Maraton/index.md
+    - ✈️ Flight4u – flight searching: Data Science/Loty/index.md
+  - 📊 Data Analysis:
+    - 🛳️ Titanic (survivival analysis): Data Analysis/Titanic/index.md
+    - 🌸 Iris (classyfication of Irises): Data Analysis/Iris/index.md
+  # - 📊 Analysis:    
+  #    - 🛳️ Titanic (survivival analysis): Analizy/Titanic/index.md
+  #    - 🌸 Iris (classyfication of Irises): Analizy/Iris/index.md
+  # - 💻 Apps: 
+  #     - 🏃‍♂️ Halfmaraton: Aplikacje/Maraton/index.md
+  #     - ✈️ Flight4u – flight searching: Aplikacje/Loty/index.md
 
 #- 🟢 Obecny projekt: - 🔙 Poprzednie projekty:
 
