@@ -2,7 +2,11 @@
 
 An exploratory data analysis of Titanic passengers, aimed at identifying the factors that influenced survival during the disaster. The dataset includes information such as gender, age, travel class, family relationships on board, and port of embarkation. The analysis involved initial data cleaning, visualizations, and comparisons between passenger groups. This project demonstrates how historical data can be used to draw practical insights and build analytical intuition.
 
-<a href="titanic_analiza.ipynb" class="md-button md-button--primary">Download notebook with Tytanic analysis</a>
+<a href="https://github.com/KamilSemczuk13/notebooks_to_portfolio/blob/main/Data_Science/maraton_model.ipynb" 
+     class="md-button md-button--primary" 
+     style="background-color: #1f77b4;">
+    📘 Check the notebook of Titanic analysis
+</a>
 
 <iframe
     id="content"

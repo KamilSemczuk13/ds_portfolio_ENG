@@ -4,7 +4,11 @@ An exploratory data analysis (EDA) of the famous Iris dataset. This project focu
 
 
 
-<a href="iris.ipynb" class="md-button md-button--primary">Download notebook with Iris Analysis</a>
+<a href="https://github.com/KamilSemczuk13/notebooks_to_portfolio/blob/main/Data_Analysis/iris.ipynb" 
+     class="md-button md-button--primary" 
+     style="background-color: #1f77b4;">
+    📘 Check the notebook of Iris analysis
+</a>
 
 <iframe
     id="content"

@@ -30,10 +30,12 @@ A project focused on building a complete retail data pipeline, transforming raw 
 - Mapping and standardizing categorical values (e.g. product categories, months)
 - Structuring data for analytical use (e.g. ranking, grouping, pivoting)
 - Integrating the pipeline with a Streamlit-based dashboard for interactive exploration
+
 📊 App Features:
 - Filtering data by year, customer, product, and performance type
 - KPI visualizations: total revenue, top/worst performers, client-level insights
 - Interactive charts showing monthly trends, product rankings, and category performance
+
 🧰 Tech Stack:
 - Python (pandas, matplotlib, seaborn)
 - SQL (SQLite queries with window functions and CTEs)

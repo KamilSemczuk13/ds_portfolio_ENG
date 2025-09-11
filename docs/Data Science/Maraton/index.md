@@ -3,10 +3,10 @@
 
 <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
 
-  <a href="maraton_model.ipynb" 
+  <a href="https://github.com/KamilSemczuk13/notebooks_to_portfolio/blob/main/Data_Science/maraton_model.ipynb" 
      class="md-button md-button--primary" 
      style="background-color: #1f77b4;">
-    📘 Download notebook (model + cloud)
+    🚀 Open Notebook – Cloud Data Ingestion, ML Modeling & Deployment
   </a>
 
   <a href="https://github.com/KamilSemczuk13/app_maraton/blob/8dc12567a3a9b82fa01dd25baf037eaa533aec58/app.py" 
