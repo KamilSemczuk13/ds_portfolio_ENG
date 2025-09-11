@@ -4,6 +4,7 @@ Hi! I'm Kamil Semczuk, a Computer Science student passionate about building proj
 In this portfolio, you’ll find selected projects that demonstrate both my technical skills and my problem-solving approach, from raw data to deployed interactive solutions.
 
 🔧 Technologies I Work With
+
 🐍 Python – pandas for data manipulation, PyCaret and scikit-learn for machine learning, Streamlit for building interactive data apps
 
 🧠 AI & LLMs – experience with OpenAI APIs, Langfuse for observability, and Instructor for structured outputs from language models
@@ -16,6 +17,5 @@ In this portfolio, you’ll find selected projects that demonstrate both my tech
 
 ☁️ Cloud Tools – using boto3 to interact with AWS S3 for data storage and retrieval,
 creating Azure SQL Databases, configuring servers, and managing data via Azure 
-
 
 📊 Data Visualization – creating insightful visuals with matplotlib, seaborn, and plotly
