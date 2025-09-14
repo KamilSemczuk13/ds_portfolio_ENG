@@ -1,8 +1,17 @@
 # 🛒 Shop Data Explorer – Retail Data Pipeline & Interactive Dashboard
 
-<p style="font-size: 1.1em; font-weight: 500; margin-bottom: 12px;">
-  🚧 <strong>The project is in progress.</strong> To check the code, click the button below:
+<p style="font-size: 1.1em; font-weight: 500; margin-bottom: 8px;">
+  🚧 <strong>Project in Progress – 55% Complete</strong>
 </p>
+
+<div style="background-color: #e0e0e0; border-radius: 8px; width: 100%; height: 20px; margin-bottom: 12px;">
+  <div style="width: 55%; height: 100%; background-color: #4caf50; border-radius: 8px;"></div>
+</div>
+
+<p style="font-size: 1em; margin-bottom: 12px;">
+  To check the code, click the button below:
+</p>
+
 
 <div style="display: flex; gap: 12px;">
   <!-- <a href="https://lotyappmy.streamlit.app/" 
@@ -21,26 +30,24 @@
 
 </div>
 
-A project focused on building a complete retail data pipeline, powered by structured SQL data rather than flat files. The system extracts and transforms data directly from a relational database (SQLite), applying custom cleaning and aggregation logic in Python. The final output is delivered through an interactive dashboard, enabling dynamic exploration of sales performance and supporting business decision-making.
 
-⚙️ Key Data Engineering Components:
-- Designing and executing SQL queries to extract structured insights from a relational database (SQLite)
-- Building a modular ETL pipeline in Python to clean, transform, and aggregate sales data
-- Implementing robust data cleaning functions to handle nulls, empty strings, and inconsistent entries
-- Mapping and standardizing categorical values (e.g. product categories, months)
-- Structuring data for analytical use (e.g. ranking, grouping, pivoting)
-- Integrating the pipeline with a Streamlit-based dashboard for interactive exploration
-
-📊 App Features:
-- Filtering data by year, customer, product, and performance type
-- KPI visualizations: total revenue, top/worst performers, client-level insights
-- Interactive charts showing monthly trends, product rankings, and category performance
-
-🧰 Tech Stack:
-- Python (pandas, matplotlib, seaborn)
-- SQL (SQLite queries with window functions and CTEs)
-- Streamlit (frontend and app logic)
-- GitHub Pages (project documentation)
-
-
-This project demonstrates the practical application of Data Engineering in a business analytics context — turning raw data into a structured, insightful product.
+<iframe
+    id="content"
+    src="shop.html"
+    width="100%"
+    style="border:1px solid black;overflow:hidden;"
+></iframe>
+<script>
+function resizeIframeToFitContent(iframe) {
+    iframe.style.height = (iframe.contentWindow.document.documentElement.scrollHeight + 50) + "px";
+    iframe.contentDocument.body.style["overflow"] = 'hidden';
+}
+window.addEventListener('load', function() {
+    var iframe = document.getElementById('content');
+    resizeIframeToFitContent(iframe);
+});
+window.addEventListener('resize', function() {
+    var iframe = document.getElementById('content');
+    resizeIframeToFitContent(iframe);
+});
+</script>
