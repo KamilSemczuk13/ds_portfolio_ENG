@@ -1,7 +1,7 @@
 # 🛒 Shop Data Explorer – Retail Data Pipeline & Interactive Dashboard
 
 <p style="font-size: 1.1em; font-weight: 500; margin-bottom: 8px;">
-  🚧 <strong>Project in Progress – 55% Complete</strong>
+  🚧 <strong>MVP Stage</strong>
 </p>
 
 <div style="background-color: #e0e0e0; border-radius: 8px; width: 100%; height: 20px; margin-bottom: 12px;">

@@ -13,7 +13,7 @@ theme:
 nav:
   - 🏠 Start: index.md
   - ⚙️ Data Engeneering:
-    - 🛒 Shop Data Explorer: Data Engeneering/Shop/index.md
+    - 🛒 Shop Data Explorer: Data Engineering/Shop/index.md
   - 🤖 Data Science & AI:
     - 🏃‍♂️ Halfmaraton: Data Science/Maraton/index.md
     - ✈️ Flight4u – flight searching: Data Science/Loty/index.md
