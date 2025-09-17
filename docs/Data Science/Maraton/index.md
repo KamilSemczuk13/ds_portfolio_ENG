@@ -12,7 +12,7 @@
   <a href="https://github.com/KamilSemczuk13/app_maraton" 
      class="md-button md-button--secondary" 
      style="background-color: #333; color: white;">
-    🐙 Chheck repository no git hub
+    🐙 Check repository on GitHub
   </a>
 
 </div>
