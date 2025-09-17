@@ -9,11 +9,11 @@
     🌍 ✈️ 📱 Flight 4 U – Open App
   </a> -->
 
-  <a href="https://github.com/KamilSemczuk13/Loty_app.git"
+  <a href="https://github.com/KamilSemczuk13/Loty_app"
      class="md-button md-button--secondary" 
      style="background-color: #333; color: white; padding: 10px 20px; 
             border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;">
-    🐙 Check code on GitHub
+    🐙 Check repository on git hub
   </a>
 
 </div>

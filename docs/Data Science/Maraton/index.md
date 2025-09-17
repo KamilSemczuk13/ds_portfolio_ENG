@@ -9,10 +9,10 @@
     🚀 Open Notebook – Cloud Data Ingestion, ML Modeling & Deployment
   </a>
 
-  <a href="https://github.com/KamilSemczuk13/app_maraton/blob/8dc12567a3a9b82fa01dd25baf037eaa533aec58/app.py" 
+  <a href="https://github.com/KamilSemczuk13/app_maraton" 
      class="md-button md-button--secondary" 
      style="background-color: #333; color: white;">
-    🐙 Check code on GitHub
+    🐙 Chheck repository no git hub
   </a>
 
 </div>
