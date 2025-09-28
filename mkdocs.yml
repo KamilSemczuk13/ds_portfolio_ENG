@@ -13,13 +13,13 @@ theme:
 nav:
   - 🏠 Start: index.md
   - ⚙️ Data Engeneering:
-    - 🛒 Shop Data Explorer: Data Engineering/Shop/index.md
+    - 🛒 Shop Data Explorer: Data_Engineering/Shop/index.md
   - 🤖 Data Science & AI:
-    - 🏃‍♂️ Halfmaraton: Data Science/Maraton/index.md
-    - ✈️ Flight4u – flight searching: Data Science/Loty/index.md
+    - 🏃‍♂️ Halfmaraton: Data_Science/Maraton/index.md
+    - ✈️ Flight4u – flight searching: Data_Science/Loty/index.md
   - 📊 Data Analysis:
-    - 🛳️ Titanic (survivival analysis): Data Analysis/Titanic/index.md
-    - 🌸 Iris (classyfication of Irises): Data Analysis/Iris/index.md
+    - 🛳️ Titanic (survivival analysis): Data_Analysis/Titanic/index.md
+    - 🌸 Iris (classyfication of Irises): Data_Analysis/Iris/index.md
   # - 📊 Analysis:    
   #    - 🛳️ Titanic (survivival analysis): Analizy/Titanic/index.md
   #    - 🌸 Iris (classyfication of Irises): Analizy/Iris/index.md
