@@ -2,7 +2,7 @@
 
 <div style="display: flex; gap: 12px;">
 
-  <a href="https://lotyappmy.streamlit.app/" 
+  <a href="https://fligft4uapp.streamlit.app/" 
      class="md-button md-button--primary" 
      style="background-color: #1E90FF; color: white; padding: 10px 20px; 
             border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;">
