@@ -2,12 +2,12 @@
 
 <div style="display: flex; gap: 12px;">
 
-  <!-- <a href="https://lotyappmy.streamlit.app/" 
+  <a href="https://lotyappmy.streamlit.app/" 
      class="md-button md-button--primary" 
      style="background-color: #1E90FF; color: white; padding: 10px 20px; 
             border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;">
-    🌍 ✈️ 📱 Flight 4 U – Open App
-  </a> -->
+    🌍✈️📱 Flight 4 U – Click here to open App!
+  </a>
 
   <a href="https://github.com/KamilSemczuk13/Loty_app"
      class="md-button md-button--secondary" 
