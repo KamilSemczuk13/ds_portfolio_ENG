@@ -1,13 +1,5 @@
 # 🛒 Shop Data Explorer – Retail Data Pipeline & Interactive Dashboard
 
-<p style="font-size: 1.1em; font-weight: 500; margin-bottom: 8px;">
-  🚧 <strong>MVP Stage</strong>
-</p>
-
-<div style="background-color: #e0e0e0; border-radius: 8px; width: 100%; height: 20px; margin-bottom: 12px;">
-  <div style="width: 55%; height: 100%; background-color: #4caf50; border-radius: 8px;"></div>
-</div>
-
 <p style="font-size: 1em; margin-bottom: 12px;">
   To check the repository, click the button below:
 </p>
