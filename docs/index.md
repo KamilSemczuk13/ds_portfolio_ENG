@@ -11,8 +11,8 @@ I’m looking for opportunities to grow as a Trainee/Junior Data Engineer and co
 
 - **Python:** pandas, PyCaret, scikit-learn, Streamlit  
 - **AI & LLMs:** OpenAI APIs, Langfuse, Instructor  
-- **SQL (Intermediate):** queries, CTEs, subqueries, window functions, transactions, CASE WHEN, table design  
-- **Data Engineering:** ETL pipelines in Python, handling CSV/Excel/JSON, deploying projects on DigitalOcean; expanding into PySpark, Apache Kafka, Kubernetes  
+- **SQL (Intermediate), PostgreSQL:** queries, CTEs, subqueries, window functions, transactions, CASE WHEN, table design  
+- **Data Engineering:** ETL pipelines in Python, handling CSV/Excel/JSON, deploying projects on DigitalOcean; expanding into PySpark
 - **Web & Applications:** Streamlit apps, cloud storage and buckets for loading/dumping data and ML models  
-- **Cloud Tools:** AWS S3 (boto3), Azure SQL Databases, server configuration  
+- **Cloud Tools:** S3 (boto3), Azure SQL Databases, server configuration  
 - **Data Visualization:** matplotlib, seaborn, plotly

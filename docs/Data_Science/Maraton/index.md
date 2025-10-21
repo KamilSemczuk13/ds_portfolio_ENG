@@ -3,17 +3,25 @@
 
 <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
 
-  <a href="https://github.com/KamilSemczuk13/notebooks_to_portfolio/blob/main/Data_Science/maraton_model.ipynb" 
+  <a href="https://appmaraton.streamlit.app/" 
      class="md-button md-button--primary" 
-     style="background-color: #1f77b4;">
-    🚀 Open Notebook – Cloud Data Ingestion, ML Modeling & Deployment
+     style="background-color: #FF4500; color: white; padding: 10px 20px; 
+            border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;">
+    🏃‍♂️⏱️🥇 Half-Marathon Predictor – Click to open App!
+  </a>
+
+  <a href="https://github.com/KamilSemczuk13/notebooks_to_portfolio/blob/main/Data_Science/maraton_model.ipynb" 
+      class="md-button md-button--primary" 
+      style="background-color: #1E90FF; color: white; padding: 10px 20px; border-radius: 8px; display: inline-flex; align-items: center; gap: 8px;">
+      📊🚀 Open Notebook – ML Modeling & Deployment
   </a>
 
   <a href="https://github.com/KamilSemczuk13/app_maraton" 
-     class="md-button md-button--secondary" 
-     style="background-color: #333; color: white;">
-    🐙 Check repository on GitHub
+      class="md-button md-button--secondary" 
+      style="background-color: #333; color: white; padding: 10px 20px; border-radius: 8px; display: inline-flex; align-items: center; gap: 8px;">
+      🐙 GitHub Repository
   </a>
+
 
 </div>
 
