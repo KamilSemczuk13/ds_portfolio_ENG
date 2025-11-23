@@ -7,20 +7,18 @@ I’m looking for opportunities to grow as a Trainee/Junior Data Engineer and co
 
 ---
 
-## 🔧 Technologies I Work With
+## 🔧 Technologies I Work With:
 
-- **Python & PySpark**: pandas, PySpark DataFrames, Streamlit for dashboards, feature engineering, ETL pipelines
+- **PySpark & Python** – ETL, DataFrames, pipelines, pandas
 
-- **SQL (Intermediate) & Databases**: PostgreSQL, Azure SQL, queries, CTEs, subqueries, window functions, transactions, CASE WHEN, table design
+- **SQL** – PostgreSQL, Azure SQL, CTE, window functions 
 
-- **Cloud & Data Platforms**: AWS S3 (boto3), Azure Blob Storage, server setup, developing skills in Azure Data Factory (ADF)
+- **Cloud** – Digital Ocean (S3), Azure (ADF – in progress) 
 
-- **Web & Applications**: Streamlit apps for interactive dashboards and visualizations, integration with cloud storage and ML model deployments
+- **App Deployment** – Streamlit apps, ML deployment  
 
-- **Data Validation & Monitoring**: schema validation, error capturing, logging, pipeline monitoring
+- **AI/LLMs** – OpenAI API, Langfuse, Instructor
 
-- **AI & LLMs**: OpenAI APIs, Langfuse, Instructor for automation and insights
+- **ML** – scikit-learn, PyCaret  
 
-- **Machine Learning**: PyCaret, scikit-learn, automated model selection pipelines
-
-- **Data Visualization**: matplotlib, seaborn, plotly for dashboards and exploratory analysis
+- **Visualization** – plotly, seaborn, matplotlib
