@@ -1,16 +1,16 @@
 # 🛒 Shop Data Explorer – Retail Data Pipeline & Interactive Dashboard
 
 <p style="font-size: 1em; margin-bottom: 12px;">
-  To check the repository, click the button below:
+  To check the notebook pipeline, click the button below:
 </p>
 
 <div style="display: flex; gap: 12px;">
 
-  <a href="https://github.com/KamilSemczuk13/shop_exlorer_app"
+  <a href="https://github.com/KamilSemczuk13/notebooks_to_portfolio/blob/main/Data_Engeneering/kpi_31_10_25.ipynb"
      class="md-button md-button--secondary" 
      style="background-color: #333; color: white; padding: 10px 20px; 
             border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;">
-    🐙 Check repository on GitHub
+    🐙 Check notebook on GitHub
   </a>
 
 </div>
@@ -18,7 +18,7 @@
 
 <iframe
     id="content"
-    src="shop.html"
+    src="kpi_notebook.html.html"
     width="100%"
     style="border:1px solid black;overflow:hidden;"
 ></iframe>
