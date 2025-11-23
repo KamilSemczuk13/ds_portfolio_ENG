@@ -18,7 +18,7 @@
 
 <iframe
     id="content"
-    src="kpi_notebook.html.html"
+    src="kpi_notebook.html"
     width="100%"
     style="border:1px solid black;overflow:hidden;"
 ></iframe>
