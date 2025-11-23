@@ -15,7 +15,9 @@ I’m looking for opportunities to grow as a Trainee/Junior Data Engineer and co
 
 - **Cloud** – Digital Ocean (S3), Azure (ADF – in progress)
 
-- **App & ML Deployment** – Streamlit apps, productionization of ML models
+- **App Deployment** – deploying data apps & ML models
+
+- **App Development** – Streamlit apps 
 
 - **AI/LLMs** – OpenAI API, Langfuse, Instructor
 
