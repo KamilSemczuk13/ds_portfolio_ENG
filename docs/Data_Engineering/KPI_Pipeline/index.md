@@ -1,4 +1,4 @@
-# 🛒 Shop Data Explorer – Retail Data Pipeline & Interactive Dashboard
+# 🚚 PySpark, Delta Lake (Medallion Architecture) On-Time Delivery Pipeline – Recruitment Task 
 
 <p style="font-size: 1em; margin-bottom: 12px;">
   To check the notebook pipeline, click the button below:

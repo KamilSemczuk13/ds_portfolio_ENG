@@ -13,7 +13,7 @@ theme:
 nav:
   - 🏠 Start: index.md
   - ⚙️ Data Engeneering:
-    - 🚚 KPI Pipeline: Data_Engineering\KPI_Pipeline\index.md
+    - 🚚 KPI Pipeline: Data_Engineering/KPI_Pipeline/index.md
     - 🛒 Shop Data Explorer: Data_Engineering/Shop/index.md
   - 🤖 Data Science & AI:
     - 🏃‍♂️ Halfmaraton: Data_Science/Maraton/index.md
