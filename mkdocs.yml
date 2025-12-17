@@ -15,7 +15,7 @@ nav:
   - ⚙️ Data Engineering:
     - 🚚 KPI Pipeline: Data_Engineering/KPI_Pipeline/index.md
     - 🛒 Shop Data Explorer: Data_Engineering/Shop/index.md
-    🧠 Additional Skills (DS & AI):
+  - 🧠 Additional Skills (DS & AI):
       - 🤖 Data Science & AI:
         - 🏃‍♂️ Halfmaraton: Data_Science/Maraton/index.md
         - ✈️ Flight4u – flight searching: Data_Science/Loty/index.md
