@@ -1,26 +1,28 @@
-# 👋 Welcome to my Portfolio
+# 👋 Welcome to My Portfolio
 
-Hi! I'm Kamil Semczuk, a Computer Science student passionate about building projects that combine data engineering, data analysis, machine learning, and AI-driven applications.  
-In this portfolio, you’ll find selected projects that demonstrate both my technical skills and problem-solving approach, from raw data to deployed interactive solutions.
+Hi! I'm **Kamil Semczuk**, a Computer Science student passionate about **Data Engineering**.  
+I love building robust, efficient, and scalable **data pipelines** and working with large datasets to deliver actionable insights.
 
-I’m looking for opportunities to grow as a Trainee/Junior Data Engineer and contribute to real-world projects where data infrastructure and analytics play a key role.
+This portfolio showcases selected projects that highlight my **Data Engineering skills**, with some additional **Data Science & AI explorations**.
+
+I am looking for opportunities to grow as a **Trainee/Junior Data Engineer** and contribute to projects where **data infrastructure and analytics** make a real impact.
 
 ---
 
-## 🔧 Technologies I Work With:
+## 🔧 Core Technologies & Skills
 
-- **PySpark & Python** – ETL, DataFrames, pipelines, pandas
+**Data Engineering:**
+- PySpark & Python – ETL, DataFrames, pipelines, pandas  
+- SQL – PostgreSQL, Azure SQL, CTEs, window functions  
+- Cloud – Azure (ADF, Databricks), Digital Ocean (S3)  
+- Orchestration & Automation – ADF pipelines, triggers, event-driven workflows  
 
-- **SQL** – PostgreSQL, Azure SQL, CTE, window functions 
+**Data Science & AI (Additional Skills):**
+- Machine Learning – scikit-learn, PyCaret  
+- AI/LLMs – OpenAI API, Langfuse, Instructor  
+- App Development – Streamlit, Python apps  
+- Data Visualization – plotly, seaborn, matplotlib  
 
-- **Cloud** – Digital Ocean (S3), Azure (ADF – in progress)
+---
 
-- **App Deployment** – deploying data apps & ML models
-
-- **App Development** – Streamlit apps 
-
-- **AI/LLMs** – OpenAI API, Langfuse, Instructor
-
-- **ML** – scikit-learn, PyCaret  
-
-- **Visualization** – plotly, seaborn, matplotlib
+> 💡 **Note:** My primary focus is **Data Engineering**, but I explore **AI and Data Science** as complementary skills to enhance data solutions.
