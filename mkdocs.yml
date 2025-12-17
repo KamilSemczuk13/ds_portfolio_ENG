@@ -17,11 +17,11 @@ nav:
     - 🛒 Shop Data Explorer: Data_Engineering/Shop/index.md
   - 🧠 Additional Skills (DS & AI):
       - 🤖 Data Science & AI:
-        - 🏃‍♂️ Halfmaraton: Data_Science/Maraton/index.md
-        - ✈️ Flight4u – flight searching: Data_Science/Loty/index.md
+        - 🏃‍♂️ Halfmaraton: Additional_skills/Data_Science/Maraton/index.md
+        - ✈️ Flight4u – flight searching: Additional_skills\Data_Science\Loty\index.md
       - 📊 Data Analysis:
-        - 🛳️ Titanic (survivival analysis): Data_Analysis/Titanic/index.md
-        - 🌸 Iris (classyfication of Irises): Data_Analysis/Iris/index.md
+        - 🛳️ Titanic (survivival analysis): Additional_skills/Data_Analysis/Titanic/index.md
+        - 🌸 Iris (classyfication of Irises): Additional_skills/Data_Analysis/Iris/index.md
   # - 📊 Analysis:    
   #    - 🛳️ Titanic (survivival analysis): Analizy/Titanic/index.md
   #    - 🌸 Iris (classyfication of Irises): Analizy/Iris/index.md
