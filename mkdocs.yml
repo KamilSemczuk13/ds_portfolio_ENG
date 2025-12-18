@@ -13,6 +13,7 @@ theme:
 nav:
   - 🏠 Start: index.md
   - ⚙️ Data Engineering:
+    - 🔶 Event-Driven Pipeline: Data_Engineering/Sales_Pipeline/index.md
     - 🚚 KPI Pipeline: Data_Engineering/KPI_Pipeline/index.md
     - 🛒 Shop Data Explorer: Data_Engineering/Shop/index.md
   - 🧠 Additional Skills (DS & AI):
