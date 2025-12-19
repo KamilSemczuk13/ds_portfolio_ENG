@@ -1,5 +1,4 @@
-🔶 Event-Driven Azure Data Engineering Pipeline
-PySpark + Delta Lake (Medallion Architecture) → Azure SQL 
+🏗️ Azure Lakehouse Pipeline – Databricks, PySpark & Delta Lake
 
 <p style="font-size: 1em; margin-bottom: 12px;">
   To check the databricks notebook, click the button below:
