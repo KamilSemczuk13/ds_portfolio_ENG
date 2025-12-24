@@ -10,7 +10,7 @@
      class="md-button md-button--secondary" 
      style="background-color: #171616ff; color: white; padding: 10px 20px; 
             border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;">
-    🐙 Check GitHub
+    🐙 Check GitHub repository
   </a>
 
 </div>

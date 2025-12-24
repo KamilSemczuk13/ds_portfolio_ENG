@@ -19,7 +19,7 @@
   <a href="https://github.com/KamilSemczuk13/app_maraton" 
       class="md-button md-button--secondary" 
       style="background-color: #333; color: white; padding: 10px 20px; border-radius: 8px; display: inline-flex; align-items: center; gap: 8px;">
-      🐙 GitHub Repository
+      🐙 Check GitHub Repository
   </a>
 
 

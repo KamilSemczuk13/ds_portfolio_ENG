@@ -1,8 +1,15 @@
 🏗️ Azure Lakehouse Pipeline – Databricks, PySpark & Delta Lake
 
-<p style="font-size: 1em; margin-bottom: 12px;">
-  To check the databricks notebook, click the button below:
-</p>
+<div style="display: flex; gap: 12px;">
+
+  <a href="https://github.com/KamilSemczuk13/Pipeline_Sales_dbrics/tree/main"
+     class="md-button md-button--secondary" 
+     style="background-color: #171616ff; color: white; padding: 10px 20px; 
+            border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;">
+    🐙 Check GitHub repository
+  </a>
+
+</div>
 
 <div style="display: flex; gap: 12px;">
 
