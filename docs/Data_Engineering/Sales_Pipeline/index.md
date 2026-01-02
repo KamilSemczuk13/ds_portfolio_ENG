@@ -1,6 +1,15 @@
 🏗️ Azure Lakehouse Pipeline – Databricks, PySpark & Delta Lake
 
+  
+
 <div style="display: flex; gap: 12px;">
+
+  <a href="https://www.linkedin.com/posts/kamil-semczuk-b16109305_dataengineering-azure-databricks-activity-7412761509581348864-Pxyo?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE3K3wIBOChF-9XYY67Ep1p3Ik8TfG8zf38" 
+     class="md-button md-button--primary" 
+     style="background-color: #1E90FF; color: white; padding: 10px 20px; 
+            border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;">
+    🎥 Data Pipeline Demo – Click to watch!
+  </a>
 
   <a href="https://github.com/KamilSemczuk13/Pipeline_Sales_dbrics/tree/main"
      class="md-button md-button--secondary" 
@@ -8,10 +17,6 @@
             border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;">
     🐙 Check GitHub repository
   </a>
-
-</div>
-
-<div style="display: flex; gap: 12px;">
 
   <a href="https://github.com/KamilSemczuk13/Pipeline_Sales_dbrics/blob/main/notebooks/Sales_dbrics_notebook.ipynb"
      class="md-button md-button--secondary" 
