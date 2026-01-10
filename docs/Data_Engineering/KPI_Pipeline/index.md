@@ -6,7 +6,7 @@
 
 <div style="display: flex; gap: 12px;">
 
-  <a href="https://github.com/KamilSemczuk13/notebooks_to_portfolio/blob/main/Data_Engeneering/kpi_31_10_25.ipynb"
+  <a href="https://github.com/KamilSemczuk13/notebooks_to_portfolio/blob/main/Data_Engeneering/kpi_defect_units.ipynb"
      class="md-button md-button--secondary" 
      style="background-color: #333; color: white; padding: 10px 20px; 
             border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;">
@@ -18,7 +18,7 @@
 
 <iframe
     id="content"
-    src="kpi_notebook.html"
+    src="KPI_defects_unit.html"
     width="100%"
     style="border:1px solid black;overflow:hidden;"
 ></iframe>
