@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>kpi_notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>KPI_defects_unit</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7510,24 +7510,24 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=426975bb">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c68abe8a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="%F0%9F%8E%AF-Project-Goal">🎯 Project Goal<a class="anchor-link" href="#%F0%9F%8E%AF-Project-Goal">¶</a></h2><p>This project implements a complete <strong>Data Lakehouse pipeline</strong> using<br/>
 <strong>PySpark, Delta Lake, and the Medallion Architecture (Bronze → Silver → Gold)</strong>.</p>
-<p>It processes raw CSV logistics data, performs validation, cleaning, transformation,<br/>
-feature engineering, and delivers final aggregated <strong>On-Time Delivery (OTD %) KPIs</strong><br/>
-ready for reporting in Power BI.</p>
-<p>The purpose of the project was to demonstrate practical <strong>Data Engineering skills</strong>:</p>
+<p>The pipeline processes raw <strong>procurement &amp; supplier logistics data</strong> stored in CSV files,<br/>
+performs validation, cleaning, transformation, feature engineering, and produces<br/>
+<strong>supplier-level aggregated metrics</strong> ready for analytics and BI consumption.</p>
+<p>The purpose of the project is to demonstrate practical <strong>Data Engineering skills</strong>:</p>
 <ul>
 <li>distributed processing with <strong>PySpark</strong></li>
 <li><strong>Delta Lake</strong> ACID layers</li>
 <li><strong>data validation &amp; schema control</strong></li>
 <li><strong>logging &amp; error handling</strong></li>
-<li>KPI computation</li>
-<li>robust architecture including <strong>scalability &amp; disaster recovery considerations</strong></li>
+<li>feature engineering and aggregations</li>
+<li>robust architecture with <strong>scalability &amp; disaster recovery considerations</strong></li>
 </ul>
 <hr/>
 <h2 id="%F0%9F%A7%B0-Technologies-and-Tools">🧰 Technologies and Tools<a class="anchor-link" href="#%F0%9F%A7%B0-Technologies-and-Tools">¶</a></h2><table>
@@ -7551,7 +7551,7 @@ ready for reporting in Power BI.</p>
 </tr>
 <tr>
 <td>Architecture</td>
-<td><strong>Medallion (Bronze/Silver/Gold)</strong></td>
+<td><strong>Medallion (Bronze / Silver / Gold)</strong></td>
 <td>Layered data refinement</td>
 </tr>
 <tr>
@@ -7567,113 +7567,90 @@ ready for reporting in Power BI.</p>
 </tbody>
 </table>
 <hr/>
-<h2 id="%F0%9F%97%82%EF%B8%8F-Data-Ingestion">🗂️ Data Ingestion<a class="anchor-link" href="#%F0%9F%97%82%EF%B8%8F-Data-Ingestion">¶</a></h2><p>Raw CSV files are loaded into Spark.<br/>
-Before entering the Bronze layer, data undergoes <strong>basic validation</strong>, such as:</p>
-<ul>
-<li>checking if files exist / are readable</li>
-<li>ensuring DataFrame is not empty</li>
-<li>validating schema mismatch</li>
-<li>unifying column names</li>
-<li>logging ingestion steps</li>
-</ul>
-<p>This simulates a realistic ingestion workflow for logistics datasets.</p>
+<h2 id="%F0%9F%A5%89-Bronze-Layer-%E2%80%93-Raw-Data-with-Basic-Validation">🥉 Bronze Layer – Raw Data with Basic Validation<a class="anchor-link" href="#%F0%9F%A5%89-Bronze-Layer-%E2%80%93-Raw-Data-with-Basic-Validation">¶</a></h2><p>The Bronze layer stores <strong>raw</strong> data in Delta Lake format.</p>
+<h3 id="%E2%9C%94-What-happens-in-this-layer?">✔ What happens in this layer?<a class="anchor-link" href="#%E2%9C%94-What-happens-in-this-layer?">¶</a></h3><p>This layer represents data <strong>as received from source systems</strong>, without transformations.</p>
 <hr/>
-<h2 id="%F0%9F%A5%89-Bronze-Layer-%E2%80%93-Raw-Data-+-Basic-Validation">🥉 Bronze Layer – Raw Data + Basic Validation<a class="anchor-link" href="#%F0%9F%A5%89-Bronze-Layer-%E2%80%93-Raw-Data-+-Basic-Validation">¶</a></h2><p>The Bronze layer stores <strong>raw-but-validated</strong> data in Delta format.</p>
-<h3 id="%E2%9C%94-What-happens-here?">✔ What happens here?<a class="anchor-link" href="#%E2%9C%94-What-happens-here?">¶</a></h3><ul>
-<li>Validate if DataFrame is empty</li>
-<li>Ensure data types are acceptable (string or null at ingestion time)</li>
-<li>Log every step (<code>start</code>, <code>validation</code>, <code>success</code>, <code>error</code>)</li>
-<li>Store data in <strong>Delta Lake</strong></li>
-<li>Keep the data as close to raw as possible</li>
+<h2 id="%F0%9F%A5%88-Silver-Layer-%E2%80%93-Cleaning,-Normalization-&amp;-Feature-Engineering">🥈 Silver Layer – Cleaning, Normalization &amp; Feature Engineering<a class="anchor-link" href="#%F0%9F%A5%88-Silver-Layer-%E2%80%93-Cleaning,-Normalization-&amp;-Feature-Engineering">¶</a></h2><p>The Silver layer transforms the Bronze dataset into a <strong>clean, typed, and analytics-ready</strong> form.</p>
+<h3 id="%E2%9C%94-Data-Cleaning-&amp;-Normalization">✔ Data Cleaning &amp; Normalization<a class="anchor-link" href="#%E2%9C%94-Data-Cleaning-&amp;-Normalization">¶</a></h3><ul>
+<li>Convert fake null values (<code>"NULL"</code>, <code>"NA"</code>, <code>"nan"</code>, empty strings) to actual nulls</li>
+<li>Convert <code>Order_Date</code> and <code>Delivery_Date</code> to proper <code>DATE</code> type</li>
+<li>Drop rows with nulls in key columns:<ul>
+<li><code>Supplier</code></li>
+<li><code>Delivery_Date</code></li>
+<li><code>Defective_Units</code></li>
 </ul>
-<p>Example checks performed:</p>
-<ul>
-<li>Detect schema mismatches</li>
-<li>Detect unexpected datatypes</li>
-<li>Log ingestion results</li>
-</ul>
-<p>This layer represents the data "as delivered" by source systems.</p>
-<hr/>
-<h2 id="%F0%9F%A5%88-Silver-Layer-%E2%80%93-Cleaning,-Normalization-&amp;-Feature-Engineering">🥈 Silver Layer – Cleaning, Normalization &amp; Feature Engineering<a class="anchor-link" href="#%F0%9F%A5%88-Silver-Layer-%E2%80%93-Cleaning,-Normalization-&amp;-Feature-Engineering">¶</a></h2><p>The Silver layer transforms the Bronze dataset into <strong>analytically clean</strong> form.</p>
-<h3 id="%E2%9C%94-Core-cleaning-steps">✔ Core cleaning steps<a class="anchor-link" href="#%E2%9C%94-Core-cleaning-steps">¶</a></h3><ul>
-<li>Convert fake nulls (<code>"NULL"</code>, <code>"NA"</code>, <code>"nan"</code>, empty strings) → actual <code>NullType</code></li>
-<li>Drop rows containing essential nulls</li>
-<li>Remove duplicates</li>
-<li>Cast string timestamps → proper <code>TIMESTAMP</code></li>
-<li>Cast OTDR flag → <code>INTEGER</code></li>
-<li>Standardize country naming for consistent analytics</li>
+</li>
+<li>Remove duplicate records</li>
+<li>Enforce consistent data types across numeric columns</li>
 </ul>
 <h3 id="%E2%9C%94-Feature-Engineering">✔ Feature Engineering<a class="anchor-link" href="#%E2%9C%94-Feature-Engineering">¶</a></h3><ul>
-<li>Compute cycle times (days, hours) between logistics timestamps</li>
-<li>Add a <code>YEAR_MONTH</code> period column (<code>yyyy-MM</code>) used for OTD KPI</li>
-<li>Normalize fields for Power BI consumption</li>
+<li>Create <code>Year_Delivery_Date</code> extracted from <code>Delivery_Date</code></li>
+<li>Compute <code>Days_Difference</code> as the number of days between <code>Order_Date</code> and <code>Delivery_Date</code></li>
 </ul>
-<p>At this stage, the dataset is clean, typed, deduplicated, enriched, and<br/>
-fully ready for business transformations.</p>
+<p>At this stage, the dataset is fully cleaned, typed, enriched, and ready for aggregation.</p>
 <hr/>
-<h2 id="%F0%9F%A5%87-Gold-Layer-%E2%80%93-KPI-Computation-&amp;-Aggregation">🥇 Gold Layer – KPI Computation &amp; Aggregation<a class="anchor-link" href="#%F0%9F%A5%87-Gold-Layer-%E2%80%93-KPI-Computation-&amp;-Aggregation">¶</a></h2><p>The Gold layer produces <strong>business-ready KPIs</strong>, especially:</p>
-<h3 id="%F0%9F%93%8C-On-Time-Delivery-%25">📌 On-Time Delivery %<a class="anchor-link" href="#%F0%9F%93%8C-On-Time-Delivery-%25">¶</a></h3><p>Computed per:</p>
+<h2 id="%F0%9F%A5%87-Gold-Layer-%E2%80%93-Supplier-Level-Aggregations">🥇 Gold Layer – Supplier-Level Aggregations<a class="anchor-link" href="#%F0%9F%A5%87-Gold-Layer-%E2%80%93-Supplier-Level-Aggregations">¶</a></h2><p>The Gold layer produces <strong>business-ready aggregated datasets</strong> at supplier granularity.</p>
+<h3 id="%F0%9F%93%8C-Aggregation-Logic">📌 Aggregation Logic<a class="anchor-link" href="#%F0%9F%93%8C-Aggregation-Logic">¶</a></h3><p>Data is grouped by:</p>
 <ul>
-<li><strong>Country</strong></li>
-<li><strong>Month/Period</strong></li>
-<li>Global aggregates (optional)</li>
+<li><code>Supplier</code></li>
+<li><code>Year_Delivery_Date</code></li>
 </ul>
-<h3 id="Steps-performed:">Steps performed:<a class="anchor-link" href="#Steps-performed:">¶</a></h3><ul>
-<li>Group by <code>Country</code>, <code>Year_Month</code></li>
-<li>Count all deliveries</li>
-<li>Count on-time deliveries</li>
-<li>Calculate OTD %</li>
-<li>Round and format metrics</li>
-<li>Store as Delta for downstream BI (Power BI, dashboards, exports)</li>
+<h3 id="%F0%9F%93%8A-Example-Metrics-Produced">📊 Example Metrics Produced<a class="anchor-link" href="#%F0%9F%93%8A-Example-Metrics-Produced">¶</a></h3><ul>
+<li>Total number of orders</li>
+<li>Total quantity delivered</li>
+<li>Average delivery lead time (<code>Days_Difference</code>)</li>
+<li>Total defective units per supplier and year</li>
 </ul>
-<p>This creates the final analytical dataset used by consumption layers.</p>
+<h3 id="%E2%9C%94-Final-Steps">✔ Final Steps<a class="anchor-link" href="#%E2%9C%94-Final-Steps">¶</a></h3><ul>
+<li>Perform aggregations using PySpark</li>
+<li>Write results as <strong>Gold Delta tables</strong></li>
+<li>Optimize structure for BI tools and downstream analytics</li>
+</ul>
+<p>This layer serves as the <strong>single source of truth</strong> for supplier performance analysis.</p>
 <hr/>
-<h2 id="%F0%9F%8F%97%EF%B8%8F-Architecture-(Medallion-+-Scalability-+-DR)">🏗️ Architecture (Medallion + Scalability + DR)<a class="anchor-link" href="#%F0%9F%8F%97%EF%B8%8F-Architecture-(Medallion-+-Scalability-+-DR)">¶</a></h2><p>Below is the high-level architecture used in the project:</p>
-<p><img alt="KPI pipeline" src="https://raw.githubusercontent.com/KamilSemczuk13/zdj_portfolio/main/KPI_pipeline_zdj/kpi_image.png"/>
-The design includes:</p>
-<h3 id="Scalability"><strong>Scalability</strong><a class="anchor-link" href="#Scalability">¶</a></h3><ul>
-<li>Spark autoscaling clusters</li>
-<li>Delta Lake optimized for large datasets</li>
-<li>Partitioning (by period/country)</li>
-<li>Cluster-compute elasticity</li>
+<h2 id="%F0%9F%8F%97%EF%B8%8F-Architecture-%E2%80%93-Medallion,-Scalability-&amp;-Reliability">🏗️ Architecture – Medallion, Scalability &amp; Reliability<a class="anchor-link" href="#%F0%9F%8F%97%EF%B8%8F-Architecture-%E2%80%93-Medallion,-Scalability-&amp;-Reliability">¶</a></h2><p>The project follows a <strong>Medallion Architecture</strong> design pattern:</p>
+<p><strong>Bronze → Silver → Gold</strong></p>
+<p><img alt="image.png" src="data:image/png;base64,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"/></p>
+<h3 id="Scalability-&amp;-Performance">Scalability &amp; Performance<a class="anchor-link" href="#Scalability-&amp;-Performance">¶</a></h3><ul>
+<li>Distributed Spark processing</li>
+<li>Delta Lake optimized for large-scale data</li>
+<li>Partitioning by <code>Year_Delivery_Date</code></li>
+<li>Compute scalability via Spark execution model</li>
 </ul>
-<h3 id="Disaster-Recovery-&amp;-Monitoring"><strong>Disaster Recovery &amp; Monitoring</strong><a class="anchor-link" href="#Disaster-Recovery-&amp;-Monitoring">¶</a></h3><ul>
-<li>Checkpointing</li>
-<li>ACID transactions</li>
-<li>Delta Time Travel</li>
-<li>Logging of every step (success/failure)</li>
-<li>Data quality validation rules</li>
-<li>S3/ADLS redundancy (multi-zone storage)</li>
+<h3 id="Reliability-&amp;-Data-Quality">Reliability &amp; Data Quality<a class="anchor-link" href="#Reliability-&amp;-Data-Quality">¶</a></h3><ul>
+<li>ACID transactions via Delta Lake</li>
+<li>Time Travel for data recovery and auditing</li>
+<li>Logging of each pipeline stage</li>
+<li>Data validation at every layer</li>
 </ul>
-<p>This structure mirrors production-ready pipelines used in modern lakehouse systems.</p>
+<p>This architecture mirrors production-grade data lakehouse pipelines.</p>
 <hr/>
-<h2 id="%F0%9F%93%8A-Consumption-%E2%80%93-Power-BI">📊 Consumption – Power BI<a class="anchor-link" href="#%F0%9F%93%8A-Consumption-%E2%80%93-Power-BI">¶</a></h2><p>The Gold Delta table is used as a <strong>single source of truth</strong> for reporting:</p>
+<h2 id="%F0%9F%93%8A-Consumption-Layer">📊 Consumption Layer<a class="anchor-link" href="#%F0%9F%93%8A-Consumption-Layer">¶</a></h2><p>The Gold Delta tables are designed for easy consumption by analytics tools such as:</p>
 <ul>
-<li>OTD KPIs</li>
-<li>Performance by country</li>
-<li>Trends by month</li>
-<li>Delivery quality dashboards</li>
+<li>Power BI</li>
+<li>SQL engines</li>
+<li>Data exploration notebooks</li>
 </ul>
+<p>They enable supplier performance analysis, defect tracking, and delivery lead-time monitoring.</p>
 <hr/>
 <h2 id="%F0%9F%9A%80-Possible-Enhancements">🚀 Possible Enhancements<a class="anchor-link" href="#%F0%9F%9A%80-Possible-Enhancements">¶</a></h2><ul>
 <li>Add orchestration layer (Airflow / Databricks Workflows)</li>
-<li>Add unit tests for data validation</li>
-<li>Implement Great Expectations for DQ checks</li>
-<li>Add CDC ingestion</li>
-<li>Publish Gold table as SQL endpoint</li>
-<li>Build monitoring dashboard for pipeline health</li>
+<li>Introduce unit tests for transformation logic</li>
+<li>Implement Great Expectations for data quality checks</li>
+<li>Add CDC-based ingestion</li>
+<li>Expose Gold tables via SQL endpoints</li>
+<li>Build monitoring dashboards for pipeline health</li>
 </ul>
 <hr/>
 <h2 id="%F0%9F%A7%A0-What-I-Learned">🧠 What I Learned<a class="anchor-link" href="#%F0%9F%A7%A0-What-I-Learned">¶</a></h2><ul>
-<li>Building distributed ETL pipelines with <strong>PySpark</strong></li>
-<li>Applying Medallion Architecture correctly</li>
-<li>Using Delta Lake for transactional storage</li>
-<li>Maintaining data quality through validation and logging</li>
-<li>Performing enrichment &amp; feature engineering at scale</li>
-<li>Aggregating business KPIs across dimensions</li>
-<li>Designing cloud-ready, scalable architectures</li>
+<li>Designing and implementing distributed ETL pipelines with <strong>PySpark</strong></li>
+<li>Applying <strong>Medallion Architecture</strong> in practice</li>
+<li>Using <strong>Delta Lake</strong> for reliable, transactional storage</li>
+<li>Enforcing data quality through validation and logging</li>
+<li>Performing feature engineering on logistics data</li>
+<li>Aggregating supplier-level metrics for analytics</li>
+<li>Building scalable, production-style data pipelines</li>
 </ul>
-<hr/>
 </div>
 </div>
 </div>
