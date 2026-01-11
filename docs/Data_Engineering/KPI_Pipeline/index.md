@@ -1,4 +1,4 @@
-🚚 PySpark, Delta Lake (Medallion Architecture) Defective Units Pipeline
+⚠️ PySpark, Delta Lake (Medallion Architecture) Defective Units Pipeline
 
 <p style="font-size: 1em; margin-bottom: 12px;">
   To check the notebook pipeline, click the button below:

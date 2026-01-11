@@ -15,7 +15,7 @@ nav:
   - ⚙️ Data Engineering:
     - 🏗️ Azure Lakehouse Pipeline – Databricks, PySpark & Delta Lake: Data_Engineering/Sales_Pipeline/index.md
     - 🏭 ADF Metadata-Driven Pipeline: Data_Engineering/Meta_data_Pipeline/index.md
-    - 🚚 KPI Pipeline: Data_Engineering/KPI_Pipeline/index.md
+    - ⚠️ KPI Pipeline: Data_Engineering/KPI_Pipeline/index.md
     - 🛒 Shop Data Explorer: Data_Engineering/Shop/index.md
   - 🧠 Additional Skills (DS & AI):
       - 🤖 Data Science & AI:
