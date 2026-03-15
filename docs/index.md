@@ -1,11 +1,10 @@
 # 👋 Welcome to My Portfolio
 
-Hi! I'm **Kamil Semczuk**, a Computer Science student passionate about **Data Engineering**.  
-I love building robust, efficient, and scalable **data pipelines** and working with large datasets to deliver actionable insights.
+Hi! I'm Kamil Semczuk, a Computer Science student passionate about Data Engineering and building modern data platforms.
 
-This portfolio showcases selected projects that highlight my **Data Engineering skills**, with some additional **Data Science & AI explorations**.
+I enjoy designing robust, scalable data pipelines and working with large datasets to transform raw data into reliable, production-ready data assets.
 
-I am looking for opportunities to grow as a **Trainee/Junior Data Engineer** and contribute to projects where **data infrastructure and analytics** make a real impact.
+This portfolio showcases selected projects that demonstrate my Data Engineering skills, including data pipelines, cloud-based workflows, and big data processing. It also includes some Data Science and AI applications I developed earlier in my journey working with data.
 
 ---
 
